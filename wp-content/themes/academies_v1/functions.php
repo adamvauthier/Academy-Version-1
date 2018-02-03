@@ -1,6 +1,4 @@
 <?php
-/** Change Media Upload Directory */
-define('UPLOADS', 'uploads');
 
 function wp_get_attachment( $attachment_id ) {
 
