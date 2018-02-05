@@ -12,7 +12,6 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-add_action('admin_menu', 'register_my_custom_submenu_page');
 
 // Include the Google Analytics Tracking Code (ga.js)
 // @ https://developers.google.com/analytics/devguides/collection/gajs/
