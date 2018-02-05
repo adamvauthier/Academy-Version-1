@@ -1,4 +1,4 @@
-<?php
+wh<?php
 
 function wp_get_attachment( $attachment_id ) {
 
@@ -181,13 +181,6 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
-
-//Initialize the update checker.
-require 'theme-updates/theme-update-checker.php';
-$example_update_checker = new ThemeUpdateChecker(
-	'Academies_V1',                                            //Theme folder name, AKA "slug". 
-	'https://beta.saintsaviourcatholicacademy.org/wp-content/themes/info.json' //URL of the metadata file.
-);
 
 
 /** 
