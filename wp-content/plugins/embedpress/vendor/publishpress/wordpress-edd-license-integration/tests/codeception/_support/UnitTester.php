@@ -1,7 +1,6 @@
 <?php
 
 define( 'ABSPATH', getenv('WP_DEVELOP_DIR' ));
-define( 'PUBLISHPRESS_EDD_LICENSE_INTEGRATION_LOADED', true );
 
 require_once __DIR__ . '/../../src/vendor/autoload.php';
 
