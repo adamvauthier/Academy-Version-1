@@ -120,6 +120,15 @@ if(jQuery(window).width() < 600 ) {
 
         });
  
+		function setCookie(name,value,days) {
+		    var expires = "";
+		    if (days) {
+		        var date = new Date();
+		        date.setTime(date.getTime() + (days*24*60*60*1000));
+		        expires = "; expires=" + date.toUTCString();
+		    }
+		    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+		}
 		function getCookie(name) {
 		    var nameEQ = name + "=";
 		    var ca = document.cookie.split(';');
@@ -141,3 +150,16 @@ if(jQuery(window).width() < 600 ) {
 		else{
 			jQuery('.gdpr-popup').show();
 		}
+		jQuery(document).ready(function(){
+		  $url = window.location.href;
+		  $n = $url.indexOf("#faq");
+		  if($n != -1){
+		    jQuery('html, body').animate({
+		        scrollTop: jQuery(".questions").offset().top
+		    }, 1000);
+		  }
+			jQuery('.gdpr-popup .accept').click(function(){
+				setCookie('gdpraccept','true',28);
+				jQuery('.gdpr-popup').fadeOut();
+			});
+		});
