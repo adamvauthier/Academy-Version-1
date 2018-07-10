@@ -5,10 +5,8 @@
  * This class should simplify the process of adding license information
  * to new EDD extensions.
  *
- * @version 1.1
+ * @version 1.6.14.4
  */
-
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 if ( ! class_exists( 'EDD_License' ) ) :
 

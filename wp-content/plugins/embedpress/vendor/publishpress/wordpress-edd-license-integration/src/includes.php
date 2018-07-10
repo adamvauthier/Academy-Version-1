@@ -22,6 +22,4 @@
  * along with WordPress-EDD-License-Integration.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-if ( ! defined( 'ABSPATH' ) ) die('No direct script access allowed.');
-
 // Deprecated file

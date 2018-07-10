@@ -150,14 +150,14 @@
     },
     {
         "name": "publishpress/edd-license-handler",
-        "version": "1.6.14.3",
-        "version_normalized": "1.6.14.3",
+        "version": "1.6.14.4",
+        "version_normalized": "1.6.14.4",
         "source": {
             "type": "git",
             "url": "https://github.com/OSTraining/EDD-License-handler",
-            "reference": "0cf8447b2dd73d4a916b2bdcf1e364c89218b25d"
+            "reference": "30dc3bb2bff29668d17406a996fa2c022d55f613"
         },
-        "time": "2018-02-07T10:08:34+00:00",
+        "time": "2018-05-18T17:13:59+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -182,21 +182,18 @@
     },
     {
         "name": "publishpress/wordpress-edd-license-integration",
-        "version": "2.2.0",
-        "version_normalized": "2.2.0.0",
+        "version": "2.2.2",
+        "version_normalized": "2.2.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/OSTraining/WordPress-EDD-License-Integration",
-            "reference": "69541b06921821bdf93db37d57cef4853745e39d"
+            "reference": "2bb4a405b8fed0c8b3728dce284b62e9b8013a96"
         },
         "require": {
             "pimple/pimple": "~3.2",
             "publishpress/edd-license-handler": "~1.6"
         },
-        "require-dev": {
-            "lucatume/wp-browser": "~1.22"
-        },
-        "time": "2018-03-01T18:52:52+00:00",
+        "time": "2018-05-18T17:11:02+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -216,14 +213,14 @@
     },
     {
         "name": "publishpress/wordpress-plugin-builder",
-        "version": "2.1.5",
-        "version_normalized": "2.1.5.0",
+        "version": "2.1.6",
+        "version_normalized": "2.1.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/OSTraining/WordPress-Plugin-Builder",
-            "reference": "08aaa403dccdca27b298552a73cb4b8e427b0e47"
+            "reference": "92d16a9b3f48898e09ccf9f89cf0e1e9467c8a63"
         },
-        "time": "2018-05-03T10:09:29+00:00",
+        "time": "2018-05-17T22:26:21+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {

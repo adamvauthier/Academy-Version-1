@@ -19,9 +19,6 @@
       "url": "https://github.com/OSTraining/EDD-License-handler"
     }
   ],
-  "require-dev": {
-    "lucatume/wp-browser": "~1.22"
-  },
   "require": {
     "pimple/pimple": "~3.2",
     "publishpress/edd-license-handler": "~1.6"
