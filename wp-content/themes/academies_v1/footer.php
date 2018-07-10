@@ -29,7 +29,7 @@
            </section> 
         <?php endif; ?>
        <p class="copyright">
-        &copy;<?php echo date("Y");  ?> <?php the_field('copyright', 'option'); ?> 
+        &copy;<?php echo date("Y");  ?> <?php the_field('copyright', 'option'); ?> | <a href="/privacy-policy/">Privacy Policy</a>
          </p>
       </div><!-- .site-info -->
      
