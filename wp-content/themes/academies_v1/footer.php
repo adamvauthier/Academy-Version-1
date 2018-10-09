@@ -19,7 +19,7 @@
           <?php the_field('footer_address', 'option'); ?>
         </section>
         <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-        <?php get_field(‘social-media-links’, ’42’); ?>
+        <?php get_field('social-media-links', '42'); ?>
         <?php if(get_field('social_media', 'option')): ?>
           <section class="social-media">	
             <?php while(has_sub_field('social_media', 'option')): ?>
