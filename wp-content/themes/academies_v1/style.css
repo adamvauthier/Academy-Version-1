@@ -908,8 +908,6 @@ gallery a {
 --------------------------------------------------------------*/
 .site-content, .container, .menu-primary-menu-container { margin: 0px auto;max-width:1110px; position:relative; }
 nav.main-navigation {background:#58595b;}
-.site-content {min-height:500px;}
-
 
 header.site-header, footer.site-footer {background:#002144;color:#ffffff;}
 header.site-header { position: relative; }
@@ -1734,4 +1732,18 @@ footer #mylightbox { display:none; }
 	margin-top:20px;
 	display:block;
     font-size: 14px;}
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+#page {
+  min-height: 100%;
+}
+.site-content-wrap {
+  padding-bottom: 220px;
+}
+footer {
+  height: 220px;
+  margin-top: -220px;
 }
