@@ -908,7 +908,7 @@ gallery a {
 --------------------------------------------------------------*/
 .site-content, .container, .menu-primary-menu-container { margin: 0px auto;max-width:1110px; position:relative; }
 nav.main-navigation {background:#58595b;}
-.site-content {min-height:400px;}
+.site-content {min-height:500px;}
 
 
 header.site-header, footer.site-footer {background:#002144;color:#ffffff;}
