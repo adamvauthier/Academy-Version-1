@@ -1743,7 +1743,7 @@ html, body {
 .site-content-wrap {
   padding-bottom: 220px;
 }
-footer {
+footer.site-footer {
   height: 220px;
   margin-top: -220px;
 }
