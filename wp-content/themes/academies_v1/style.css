@@ -1709,6 +1709,10 @@ footer #mylightbox { display:none; }
 .gdpr-popup a:hover{
 	color:#edda3a;
 }
+footer.site-footer {
+  height: 220px;
+  margin-top: -220px;
+}
 @media (max-width: 600px) { 
 	.gdpr-popup { 
 	display:none;
@@ -1731,7 +1735,12 @@ footer #mylightbox { display:none; }
 	margin-left:0;
 	margin-top:20px;
 	display:block;
-    font-size: 14px;}
+    font-size: 14px;
+	}
+	footer.site-footer {
+	  height: auto;
+	  margin-top: -220px;
+	}
 }
 html, body {
   height: 100%;
@@ -1742,8 +1751,4 @@ html, body {
 }
 .site-content-wrap {
   padding-bottom: 220px;
-}
-footer.site-footer {
-  height: 220px;
-  margin-top: -220px;
 }
