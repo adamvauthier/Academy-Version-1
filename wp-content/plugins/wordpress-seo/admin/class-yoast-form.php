@@ -552,6 +552,7 @@ class Yoast_Form {
 		echo '</fieldset>';
 	}
 
+
 	/**
 	 * Create a toggle switch input field using two radio buttons.
 	 *

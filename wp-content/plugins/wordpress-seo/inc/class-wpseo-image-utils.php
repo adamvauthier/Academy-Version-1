@@ -9,7 +9,6 @@
  * WPSEO_Image_Utils
  */
 class WPSEO_Image_Utils {
-
 	/**
 	 * Find an attachment ID for a given URL.
 	 *
@@ -63,6 +62,7 @@ class WPSEO_Image_Utils {
 		// We have the Post ID, but it's not in the cache yet. We do that here and return.
 		wp_cache_set( $cache_key, $id, '', ( 24 * HOUR_IN_SECONDS + mt_rand( 0, ( 12 * HOUR_IN_SECONDS ) ) ) );
 		return $id;
+
 	}
 
 	/**
@@ -176,6 +176,7 @@ class WPSEO_Image_Utils {
 
 		return $image;
 	}
+
 
 	/**
 	 * Finds the full file path for a given image file.
