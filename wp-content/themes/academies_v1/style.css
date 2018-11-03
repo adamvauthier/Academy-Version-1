@@ -1203,7 +1203,11 @@ footer .copyright {padding-left:0px;}
 .events {float: none; width: 94%; margin: 10px auto; }
 .news {float: none; width: 94%; margin: 5px auto; }
 footer img {float: left; margin: 15px; }
-footer .address {width: 45%} 
+footer .address {width: 45%; float:none; clear:both;} 
+footer .menu-footer-container { float:none; clear:both; }
+footer .menu-footer-container ul { padding-left:0; margin-left:20px; }
+	footer .social-media .sm { float:none; }
+	footer .social-media h6 { float:left; }
 }
 @media screen and (max-width: 400px) {
 header .site-branding {margin:auto;}
@@ -1709,9 +1713,11 @@ footer #mylightbox { display:none; }
 .gdpr-popup a:hover{
 	color:#edda3a;
 }
+@media (min-width: 601px) { 
 footer.site-footer {
   height: 220px;
   margin-top: -220px;
+}
 }
 @media (max-width: 600px) { 
 	.gdpr-popup { 
@@ -1738,9 +1744,9 @@ footer.site-footer {
     font-size: 14px;
 	}
 	footer.site-footer {
-	  height: auto;
-	  margin-top: -220px;
+		margin-top:-220px;
 	}
+	
 }
 html, body {
   height: 100%;
