@@ -1758,3 +1758,67 @@ html, body {
 .site-content-wrap {
   padding-bottom: 220px;
 }
+/* Google Translate */
+#google_language_translator{
+	float: right;
+    margin-top: 90px;
+}
+.goog-te-gadget-simple {
+	background:transparent !important;
+	border:none !important;
+	color:#FFF !important;
+}
+.goog-te-gadget-icon{
+	display:none;
+}
+.goog-te-menu-value span, .goog-te-menu-value img {
+	color:#FFF;
+	font-size:16px;
+	text-transform:uppercase;
+}
+.goog-te-menu-value span:first-child{ display:inline-block; }
+.menu-language-container {
+	float:right;
+	margin-top:100px;
+	list-style-type:none;
+}
+.menu-language-container ul {
+	list-style-type:none;
+}
+.menu-language-container ul a:after {
+	content: '\f107';
+	font-size:14px;
+	font-family: FontAwesome;
+   font-weight: normal;
+   font-style: normal;
+   margin:0px 0px 0px 5px;
+   text-decoration:none;
+}
+.menu-language-container ul ul {
+	display:none;
+	position:absolute;
+	list-style-type:none;
+	margin-left: 0;
+	padding:0;
+	padding-top:0px;
+	z-index:1000;
+	background:#58595b;
+	color:#000;
+	width:100px;
+	padding-left:10px;
+}
+.menu-language-container li li a {
+	color:#FFF;
+	padding-top: 5px;
+	padding-bottom:5px;
+	display:block;
+}
+.menu-language-container ul li li a:after {
+	content:'';
+}
+.menu-language-container:hover > ul ul {
+	display:block;
+}
+html[lang="es"] .gce-list-title {
+	font-size:16px;
+}

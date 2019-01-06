@@ -193,9 +193,9 @@ function createDateRangeArray($strDateFrom,$strDateTo)
 	<header id="masthead" class="site-header" role="banner">
     <section class="container">
       <a href="http://dioceseofbrooklyn.org/" target="_blank"><div class="home-icon"></div></a>
-      <div class="site-branding">
-          <?php if (get_field('ogo_image', 'option')) { ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php the_field('ogo_image', 'option') ?>" class="aca-logo"/></a><?php } ?>
-          <div class="site-title">
+
+		<div class="site-branding">
+          <?php if (get_field('ogo_image', 'option')) { ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php the_field('ogo_image', 'option') ?>" class="aca-logo"/></a><?php } ?>          <div class="site-title">
             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
               <?php bloginfo( 'name' ); ?>
             </a></h1>
@@ -203,7 +203,7 @@ function createDateRangeArray($strDateFrom,$strDateTo)
           </div>
         <div class="clear"></div>
       </div><!-- .site-branding -->
-        <a href="<?php the_field('sign_up_link', 'option');?>" class="sign-in"><?php the_field('sign_up_text', 'option') ?></a>
+					<?php wp_nav_menu( array( 'menu' => 'language' ) ); ?>
       </section>
       <nav id="site-navigation" class="main-navigation" role="navigation">
         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'academies_v1' ); ?></button>
