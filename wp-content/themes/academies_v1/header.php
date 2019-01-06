@@ -203,7 +203,12 @@ function createDateRangeArray($strDateFrom,$strDateTo)
           </div>
         <div class="clear"></div>
       </div><!-- .site-branding -->
-					<?php wp_nav_menu( array( 'menu' => 'language' ) ); ?>
+					<?php 
+					if ( has_nav_menu( 'language' ) ) {
+
+					wp_nav_menu( array( 'menu' => 'language' ) ); 
+					
+					}?>
       </section>
       <nav id="site-navigation" class="main-navigation" role="navigation">
         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'academies_v1' ); ?></button>
