@@ -204,7 +204,7 @@ function createDateRangeArray($strDateFrom,$strDateTo)
         <div class="clear"></div>
       </div><!-- .site-branding -->
 					<?php 
-					if ( has_nav_menu( 'language' ) ) {
+					if ( wp_get_nav_menu_object( 'language' ) ) {
 
 					wp_nav_menu( array( 'menu' => 'language' ) ); 
 					
