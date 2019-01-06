@@ -1,5 +1,5 @@
 <?php
-defined( 'ABSPATH' ) || die( 'Cheatin\' uh?' );
+defined( 'ABSPATH' ) || die( 'Cheatin’ uh?' );
 ?>
 <div class="wrap imagify-settings imagify-bulk">
 
@@ -187,7 +187,7 @@ defined( 'ABSPATH' ) || die( 'Cheatin\' uh?' );
 						<?php
 						printf(
 							/* translators: %s is a file size. */
-							esc_html__( 'All images greater than %s will be optimized when using a paid plan.', 'imagify' ),
+							esc_html__( 'All images greater than %s (after resizing, if any) will be optimized when using a paid plan.', 'imagify' ),
 							esc_html( imagify_size_format( get_imagify_max_image_size() ) )
 						);
 						?>
