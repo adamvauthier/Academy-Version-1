@@ -208,7 +208,11 @@ function createDateRangeArray($strDateFrom,$strDateTo)
 
 					wp_nav_menu( array( 'menu' => 'language' ) ); 
 					
-					}?>
+					}
+					else { ?>
+						<a href="<?php the_field('sign_up_link', 'option');?>" class="sign-in"><?php the_field('sign_up_text', 'option') ?></a>
+					<?php }
+					?>
       </section>
       <nav id="site-navigation" class="main-navigation" role="navigation">
         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'academies_v1' ); ?></button>
