@@ -555,12 +555,14 @@ a:active {
 }
 
 .main-navigation ul ul ul {
-	left: -999em;
 	top: 0;
+	left:0;
+	float:none;
+	position:relative;
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 220px;
 }
 
 .main-navigation ul ul li {
@@ -586,7 +588,7 @@ a:active {
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
-	left: 100%;
+	left: auto;
 }
 
 .main-navigation .current_page_item > a,
@@ -948,9 +950,17 @@ footer .social-media .LinkedIn {background:url('/wp-content/themes/academies_v1/
 footer .social-media .Instagram {background:url('/wp-content/themes/academies_v1/images/social-icons.png')no-repeat -177px center transparent;}
 
 .main-navigation ul ul {top: 38px;}
+.main-navigation ul ul ul li {
+	        line-height: normal;
+    padding: 5px 20px;
+}
+.main-navigation ul ul li {
+	padding:7px 20px 10px 20px;
+	line-height:normal;
+}
 .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul { left: 0; }
 .main-navigation ul li ul li {background:#7b7c80; text-align:left; text-transform:initial; }
-.main-navigation ul li ul li:hover {background: #8c8d91;}
+.main-navigation ul li ul li:hover {background:#7b7c80;}
 
 /*--------------------------------------------------------------
 ## Homepage
