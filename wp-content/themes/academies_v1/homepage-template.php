@@ -60,6 +60,7 @@ else{
 						</article>
 					<?php endwhile; wp_reset_postdata(); ?>
 				<?php endif; ?>
+				<a href="/category/homepage-news/" class="more-info">MORE</a>
       </section>
        
     <?php endwhile;  ?>
@@ -135,7 +136,7 @@ $events[$startDate][] = '<div class="gce-list-event gce-tooltip-event"><a href="
                            }
                           echo '</div><div>';
                         }
-   echo '</div></aside></div>';
+   echo '</div><a href="/calendar/" class="more-info-2">MORE</a></aside></div>';
                         ?>
 <div class="clear"></div>      
 </section> 
