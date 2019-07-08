@@ -311,6 +311,12 @@ $dateArray = array();
 					echo do_shortcode('[kingslider id="'.$royalsliderid.'"]');
 					endif;
 				?>
+        <?php 
+          $nivosliderid = get_field('nivo_slider');
+          if(get_field('nivo_slider')):
+          echo do_shortcode('[nivoslider id="'.$nivosliderid.'"]');
+          endif;
+        ?>
   	</div>
 	<?php } ?>  
 	<div id="content" class="site-content">
