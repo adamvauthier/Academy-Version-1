@@ -321,13 +321,9 @@ $dateArray = array();
           var interval = null;
 
           function addNivoArrowClass(){
-            if( jQuery('.nivoSlider').length ){
-              if( jQuery('.nivo-nextNav').length ){
-                jQuery('.nivo-nextNav').addClass('fa fa-caret-square-o-right');
-              }
-              if( jQuery('.nivo-prevNav').length ){
-                jQuery('.nivo-prevNav').addClass('fa fa-caret-square-o-left');
-              }
+            if( jQuery('.nivo-nextNav').length && jQuery('.nivo-prevNav').length ){
+              jQuery('.nivo-nextNav').addClass('fa fa-caret-square-o-right');
+              jQuery('.nivo-prevNav').addClass('fa fa-caret-square-o-left');
               clearInterval(interval);
             }
           }
