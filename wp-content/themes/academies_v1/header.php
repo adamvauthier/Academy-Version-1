@@ -317,6 +317,27 @@ $dateArray = array();
           echo do_shortcode('[nivoslider id="'.$nivosliderid.'"]');
           endif;
         ?>
+        <script>
+          var interval = null;
+
+          function addNivoArrowClass(){
+            if( jQuery('.nivoSlider').length ){
+              if( jQuery('.nivo-nextNav').length ){
+                jQuery('.nivo-nextNav').addClass('fa fa-caret-square-o-right');
+              }
+              if( jQuery('.nivo-prevNav').length ){
+                jQuery('.nivo-prevNav').addClass('fa fa-caret-square-o-left');
+              }
+              clearInterval(interval);
+            }
+          }
+
+          jQuery(document).ready(function(){
+            if( window.location.pathname == '/' ){
+              interval = setInterval(addNivoArrowClass, 750);
+            }
+          });
+        </script>
   	</div>
 	<?php } ?>  
 	<div id="content" class="site-content">
